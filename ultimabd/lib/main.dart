@@ -36,9 +36,10 @@ class _InicioState extends State<Inicio> {
     // TODO: implement initState
     super.initState();
     getUsuarios();
+    getCalendario();
+    getGrupos();
+    getMensajes();
   }
-
-
 
   @override
   Widget build(BuildContext context) {
