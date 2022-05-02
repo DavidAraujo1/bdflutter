@@ -1,6 +1,6 @@
 class Usuarios {
   final num id;
-  final num nivel;
+  final String nivel;
   final String usuario;
   final String correo;
   final String password;
