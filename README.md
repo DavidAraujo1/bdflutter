@@ -2,7 +2,7 @@
 
 Actividad extra aula Flutter - Firebase
 
-##Integrantes
+<strong>Integrantes</strong>
 
 ARAUJO LEIVA, DAVID PORFIRIO 		25-4899-2017 <br>
 GUEVARA PORTILLO, DAVID ERNESTO 		25-4862-2017<br>
