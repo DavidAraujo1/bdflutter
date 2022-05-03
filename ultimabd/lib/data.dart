@@ -27,7 +27,7 @@ Future<dynamic> getUsuarios() async {
 
 Future<dynamic> getGrupos() async {
   CollectionReference collectionReference =
-      FirebaseFirestore.instance.collection("usuarios");
+      FirebaseFirestore.instance.collection("grupos");
   QuerySnapshot grupos = await collectionReference.get();
   gruposDatos = [];
   if (grupos.docs.isNotEmpty) {
@@ -36,12 +36,12 @@ Future<dynamic> getGrupos() async {
           item["tipo"], item["publico"]));
     }
   }
-  return usuariosDatos;
+  return gruposDatos;
 }
 
 Future<dynamic> getCalendario() async {
   CollectionReference collectionReference =
-      FirebaseFirestore.instance.collection("usuarios");
+      FirebaseFirestore.instance.collection("calendario");
   QuerySnapshot calendario = await collectionReference.get();
   calendarioDatos = [];
   if (calendario.docs.isNotEmpty) {
@@ -60,12 +60,12 @@ Future<dynamic> getCalendario() async {
           item["img_fin"]));
     }
   }
-  return usuariosDatos;
+  return calendarioDatos;
 }
 
 Future<dynamic> getMensajes() async {
   CollectionReference collectionReference =
-      FirebaseFirestore.instance.collection("usuarios");
+      FirebaseFirestore.instance.collection("mensajes");
   QuerySnapshot mensajes = await collectionReference.get();
   mensajesDatos = [];
   if (mensajes.docs.isNotEmpty) {
@@ -73,7 +73,7 @@ Future<dynamic> getMensajes() async {
       mensajesDatos.add(Mensajes(
           item["idm"],
           item["idu_de"],
-          item["id_para"],
+          item["idu_para"],
           item["titulo"],
           item["mensaje"],
           item["idgrupo"],
@@ -82,5 +82,5 @@ Future<dynamic> getMensajes() async {
           item["tags"]));
     }
   }
-  return usuariosDatos;
+  return mensajesDatos;
 }

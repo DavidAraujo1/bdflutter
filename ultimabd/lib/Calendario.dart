@@ -1,9 +1,9 @@
 class Calendario {
-  final int id;
+  final num id;
   final int idUsuario;
   final String nombre;
-  final DateTime fechaIni;
-  final DateTime fechaFin;
+  final String fechaIni;
+  final String fechaFin;
   final String horaIni;
   final String horaFin;
   final String detalles;

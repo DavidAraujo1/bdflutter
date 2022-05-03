@@ -1,5 +1,5 @@
 class Configuracion {
-  final int id;
+  final String id;
   final int idUsuario;
   final String nombre;
   final String valor;

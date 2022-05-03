@@ -1,7 +1,7 @@
 class Grupos {
   final int id;
   final String nombre;
-  final String idUsuario;
+  final int idUsuario;
   final String tipo;
   final bool publico;
 
